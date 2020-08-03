@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="myStyle.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:wght@700">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Luckiest+Guy&display=swap"
     rel="stylesheet">
+
 <style>
     body,
     html {
@@ -56,13 +58,12 @@
     <!-- Header with image -->
     <header class="bgimg w3-display-container" id="home">
         <div class="w3-display-bottomleft w3-padding">
-            <span class="w3-tag w3-xlarge texto">Horarios de Atencion: 10am a 12pm. Lunes descansamos!</span>
+            <span class="w3-tag w3-xlarge texto">Llamanos al 770-7343 o al 946-066-309</span>
         </div>
-        <div class="w3-display-middle w3-center">
-            <span class="w3-text-white w3-hide-small w3-red"
-                style="font-size:100px;;">POLLO<br>FONO</span>
-            <span class="w3-text-white w3-hide-large w3-hide-medium w3-red"
-                style="font-size:60px"><b>POLLO<br>FONO</b></span>
+        <div class="w3-display-middle w3-center white-bg">
+            <img src="images/Asset 5.svg" alt="Pollofono" class="w3-hide-small" style="width: 400px">
+            <img src="images/pollofono_icon.svg" alt="Pollofono" class="w3-hide-medium w3-hide-large white-bg"
+                style="width: 200px">
             <p><a href="#menu" class="w3-button w3-xxlarge w3-black texto">Que hay de comer?</a></p>
         </div>
     </header>
@@ -183,42 +184,86 @@
     </div>
 
     <!-- About Container -->
-    <div class="w3-container w3-padding-64 w3-red w3-xlarge" id="about">
+    <div class="w3-container w3-padding-64 w3-red w3-xlarge">
         <div class="w3-content">
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-            <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Deleitate Con la mirada</h1>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/IMG_1009.JPG" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">Pollito</div>
+                </div>
+
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/IMG_1229.JPG" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">Tequenios</div>
+                </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/IMG_1247.JPG" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">Alitas</div>
+                </div>
+            </div>
+            <div class="arrow-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+  
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+    <div class="w3-container w3-padding-64 w3-yellow w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Nosotros</h1>
+            <p>Pollería artesanal. Con saber de barrio. Pruébalo con nuestro ají y arroz chaufa, tequeños o alitas bbq.
+            </p>
+            <p>Nuestro pollito es tan rico que hará que todos los que estén en la mesa comiendo no hablen naa durante un
+                buen rato, te lo podemos asegurar. ¡Palabra de honor!</p>
+            <p>Así que si quieres comer rico y sin que miren la pantalla de sus fonos, llama a nuestros fonos: 770-7343
+                o al WhatsApp 946-066-309 o si quieres al inbox….</p>
+            <p>Te mandamos el pollito en caja, asegurando que llegue calentito y seguro. ¡Ya qué más!</p>
             <p><strong>The Chef?</strong> Mr. Italiano himself<img src="images/chef.jpg" style="width:150px"
                     class="w3-circle w3-right" alt="Chef"></p>
-            <p>We are proud of our interiors.</p>
-            <img src="images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
-                alt="Restaurant">
-            <h1><b>Opening Hours</b></h1>
+            <p>Solo delivery, causa...</p>
+
+            <h1><b>Cuando puedes disfrutar de nuestro pollo?</b></h1>
 
             <div class="w3-row">
                 <div class="w3-col s6">
-                    <p>Mon & Tue CLOSED</p>
-                    <p>Wednesday 10.00 - 24.00</p>
-                    <p>Thursday 10:00 - 24:00</p>
+                    <p>Lunes descansamos</p>
+                    <p>Martes 11.00 - 20.00</p>
+                    <p>Miercoles 11:00 - 20:00</p>
                 </div>
                 <div class="w3-col s6">
-                    <p>Friday 10:00 - 12:00</p>
-                    <p>Saturday 10:00 - 23:00</p>
-                    <p>Sunday Closed</p>
+                    <p>Jueves 11:00 - 20:00</p>
+                    <p>Viernes 10:00 - 20:00</p>
+                    <p>Sabado 10:00 - 20:00</p>
+                    <p>Domingo 11:00 - 17:00</p>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- Image of location/map -->
-    <img src="images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
 
     <!-- Contact -->
-    <div class="w3-container w3-padding-64 w3-yellow w3-xlarge">
+    <div class="w3-container w3-padding-64 w3-red w3-xlarge">
         <div class="w3-content">
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
             <p>Find us at some address at some place or call us at 05050515-122330</p>
             <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
                 understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
@@ -261,6 +306,35 @@
             evt.currentTarget.firstElementChild.className += " w3-red";
         }
         document.getElementById("myLink").click();
+
+
+        //carrusel
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
     </script>
 
 </body>
