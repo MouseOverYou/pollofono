@@ -38,7 +38,7 @@
         min-height: 90%;
     }
 
-    .texto {
+    .text {
         /*font-family: 'Raleway', sans-serif;*/
     }
 </style>
@@ -49,7 +49,7 @@
     <div class="w3-top">
         <div class="w3-bar w3-xlarge w3-yellow w3-opacity w3-hover-opacity-off" id="myNavbar">
             <a href="#" class="w3-bar-item w3-button">INICIO</a>
-            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#menu" class="w3-bar-item w3-button">CARTA</a>
             <a href="#nosotros" class="w3-bar-item w3-button">NOSOTROS</a>
             <a href="#contacto" class="w3-bar-item w3-button">CONTACTO</a>
         </div>
@@ -67,12 +67,83 @@
             <p><a href="#menu" class="w3-button w3-xxlarge w3-black texto">Que hay de comer?</a></p>
         </div>
     </header>
+    <!-- Promos Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-xlarge" id="menu">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Promos</h1>
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/promos/p_clasica.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Clasica</div>
+                </div>
+
+            </div>
+
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/promos/p_perucha.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Perucha</div>
+                </div>
+            </div>
+
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/promos/p_mostra.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Mostra</div>
+                </div>
+            </div>
+
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/promos/p_jijuna.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Jijuna</div>
+                </div>
+            </div>
+
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/promos/p_conchesu.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Conchesu</div>
+                </div>
+            </div>
+
+            <div class="carru-promos mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/promos/p_peruchita.jpeg" style="width:100%">
+                <div class="arrow-container">
+                    <div class="text">La Peruchita</div>
+                </div>
+            </div>
+
+            <div class="arrow-container">
+                <a class="prev" onclick="plusSlides(-1, 'promos')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'promos')">&#10095;</a>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot dot-promos" onclick="currentSlide(1, 'promos')"></span>
+            <span class="dot dot-promos" onclick="currentSlide(2, 'promos')"></span>
+            <span class="dot dot-promos" onclick="currentSlide(3, 'promos')"></span>
+            <span class="dot dot-promos" onclick="currentSlide(4, 'promos')"></span>
+            <span class="dot dot-promos" onclick="currentSlide(5, 'promos')"></span>
+            <span class="dot dot-promos" onclick="currentSlide(6, 'promos')"></span>
+        </div>
+
+    </div>
 
     <!-- Menu Container -->
-    <div class="w3-container w3-yellow w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-container w3-yellow w3-padding-64 w3-xxlarge">
         <div class="w3-content">
 
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">El MENU</h1>
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LA CARTA</h1>
             <div class="w3-row w3-center w3-border w3-border-dark-grey">
                 <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
                     <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pollos</div>
@@ -183,11 +254,11 @@
         </div>
     </div>
 
-    <!-- About Container -->
+    <!-- Extras Container -->
     <div class="w3-container w3-padding-64 w3-red w3-xlarge">
         <div class="w3-content">
-            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Deleitate Con la mirada</h1>
-            <div class="mySlides fade">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Extras</h1>
+            <div class="carru-extras mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="images/IMG_1009.JPG" style="width:100%">
                 <div class="arrow-container">
@@ -195,16 +266,16 @@
                 </div>
 
             </div>
-    
-            <div class="mySlides fade">
+
+            <div class="carru-extras mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="images/IMG_1229.JPG" style="width:100%">
                 <div class="arrow-container">
                     <div class="text">Tequenios</div>
                 </div>
             </div>
-    
-            <div class="mySlides fade">
+
+            <div class="carru-extras mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="images/IMG_1247.JPG" style="width:100%">
                 <div class="arrow-container">
@@ -212,20 +283,22 @@
                 </div>
             </div>
             <div class="arrow-container">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1, 'extras')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'extras')">&#10095;</a>
             </div>
-  
+
         </div>
         <br>
 
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot dot-extras" onclick="currentSlide(1, 'extras')"></span>
+            <span class="dot dot-extras" onclick="currentSlide(2,'extras')"></span>
+            <span class="dot dot-extras" onclick="currentSlide(3, 'extras')"></span>
         </div>
 
     </div>
+
+    <!-- Nosotros Container -->
     <div class="w3-container w3-padding-64 w3-yellow w3-xlarge" id="nosotros">
         <div class="w3-content">
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Nosotros</h1>
@@ -307,22 +380,32 @@
         document.getElementById("myLink").click();
 
 
-        //carrusel
+        //carrusel 
         var slideIndex = 1;
-        showSlides(slideIndex);
+        showSlides(slideIndex, "promos");
+        showSlides(slideIndex, "extras");
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+        function plusSlides(n, carrusel) {
+            showSlides(slideIndex += n, carrusel);
         }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
+        function currentSlide(n, carrusel) {
+            showSlides(slideIndex = n, carrusel);
         }
 
-        function showSlides(n) {
+        function showSlides(n, carrusel) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
+            var slides;
+            var dots;
+            if(carrusel=="extras"){
+                slides = document.getElementsByClassName("carru-extras");
+                dots = document.getElementsByClassName("dot-extras")
+            }
+            else if(carrusel == "promos"){
+                slides = document.getElementsByClassName("carru-promos");
+                dots = document.getElementsByClassName("dot-promos")
+            }
+            
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
